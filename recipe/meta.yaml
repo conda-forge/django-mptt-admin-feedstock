@@ -1,6 +1,6 @@
 {% set name = "django-mptt-admin" %}
-{% set version = "0.7.1" %}
-{% set sha256 = "e5df3132071648a3f088e9c085743b11bd189c83223204b25801e5e711f74790" %}
+{% set version = "0.7.2" %}
+{% set sha256 = "daab9fbd641ca31ec3d3d0e8aeebfbb90d85a2b37c4adbef4ed972208201af84" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
