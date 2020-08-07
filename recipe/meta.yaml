@@ -1,6 +1,6 @@
 {% set name = "django-mptt-admin" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "bfa66f091b93c8c2feacd79664152a410989244f6e0b05905522d74e2b2f0cc1" %}
+{% set version = "1.0.2" %}
+{% set sha256 = "707607cd266f8bae2fd94bc76c3bd4b2f7bc03d9270fd1296d682ca995c551ee" %}
 
 package:
   name: {{ name|lower }}
@@ -25,20 +25,19 @@ requirements:
     - python
     - django
     - django-mptt
-    - six 
+    - six
 
 test:
   imports:
     - django_mptt_admin
-    
+
 about:
   home: https://github.com/mbraak/django-mptt-admin
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
-  summary: 'Django-mptt-admin provides a nice Django Admin interface for Mptt models'
-  description: 
-    Django-mptt-admin provides a nice Django Admin interface for django-mptt models. 
+  summary: Django-mptt-admin provides a nice Django Admin interface for Mptt models
+  description: Django-mptt-admin provides a nice Django Admin interface for django-mptt models.
   doc_url: https://mbraak.github.io/django-mptt-admin/
   dev_url: https://github.com/mbraak/django-mptt-admin
 
