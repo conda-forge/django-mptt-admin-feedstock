@@ -5,9 +5,13 @@ Home: https://github.com/mbraak/django-mptt-admin
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/django-mptt-admin-feedstock/blob/master/LICENSE.txt)
 
 Summary: Django-mptt-admin provides a nice Django Admin interface for Mptt models
+
+Development: https://github.com/mbraak/django-mptt-admin
+
+Documentation: https://mbraak.github.io/django-mptt-admin/
 
 Django-mptt-admin provides a nice Django Admin interface for django-mptt models.
 
