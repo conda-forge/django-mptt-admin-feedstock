@@ -1,39 +1,38 @@
 {% set name = "django-mptt-admin" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "bfa66f091b93c8c2feacd79664152a410989244f6e0b05905522d74e2b2f0cc1" %}
+{% set version = "2.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-mptt-admin-{{ version }}.tar.gz
+  sha256: e9ffc56cca1b1fbe79da0408ffdf03971077e4716b08b68028a22007b0852c40
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
-  build:
-    - python
-    - setuptools
+  host:
+    - python >=3.8
     - pip
   run:
-    - python
-    - django
+    - python >=3.8
     - django-mptt
-    - six 
 
 test:
   imports:
     - django_mptt_admin
-    
+  commands:
+    - pip check
+  requires:
+    - pip
+
 about:
   home: https://github.com/mbraak/django-mptt-admin
-  license: BSD-3-Clause
+  license: Apache-2.0
   license_family: BSD
   license_file: LICENSE.rst
   summary: 'Django-mptt-admin provides a nice Django Admin interface for Mptt models'
@@ -46,3 +45,4 @@ extra:
   recipe-maintainers:
     - cshaley
     - sannykr
+    - rxm7706
