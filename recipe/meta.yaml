@@ -1,5 +1,5 @@
 {% set name = "django-mptt-admin" %}
-{% set version = "2.5.1" %}
+{% set version = "2.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-mptt-admin-{{ version }}.tar.gz
-  sha256: e9ffc56cca1b1fbe79da0408ffdf03971077e4716b08b68028a22007b0852c40
+  sha256: e277a9fbfae55cf7a6e4091c45d84f528decd3fe09a203acf5a5ebd7c22297df
 
 build:
   noarch: python
@@ -36,8 +36,7 @@ about:
   license_family: BSD
   license_file: LICENSE.rst
   summary: 'Django-mptt-admin provides a nice Django Admin interface for Mptt models'
-  description: 
-    Django-mptt-admin provides a nice Django Admin interface for django-mptt models. 
+  description: Django-mptt-admin provides a nice Django Admin interface for django-mptt models.
   doc_url: https://mbraak.github.io/django-mptt-admin/
   dev_url: https://github.com/mbraak/django-mptt-admin
 
