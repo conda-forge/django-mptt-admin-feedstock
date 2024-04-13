@@ -1,5 +1,5 @@
 {% set name = "django-mptt-admin" %}
-{% set version = "2.6.1" %}
+{% set version = "2.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-mptt-admin-{{ version }}.tar.gz
-  sha256: e277a9fbfae55cf7a6e4091c45d84f528decd3fe09a203acf5a5ebd7c22297df
+  sha256: 1b500977fb81051147e1b819b8bfbc0c62316a576c6c016df46a59baa87c3c3f
 
 build:
   noarch: python
