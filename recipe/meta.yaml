@@ -1,13 +1,13 @@
 {% set name = "django-mptt-admin" %}
-{% set version = "2.7.0" %}
+{% set version = "2.7.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 3781809f67da86ce07d23f819f78e0682f86b4d850722c6ff2ffae49d83a8e3f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 6304d42de1596a5acd4f3b8ba2ca9753ce0d86d4c2f3fe6211b08bee46f4b1c4
 
 build:
   noarch: python
@@ -16,10 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - django-mptt
 
 test:
@@ -29,6 +30,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/mbraak/django-mptt-admin
