@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "3.1.0"
+  version: "3.1.1"
 
 package:
   name: django-mptt-admin
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/mbraak/django-mptt-admin/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 0e1dbb645bb95b19b5b8dffbb98687f631e3781c1d4de6a895e10c420e21f654
+  sha256: 674c76b8bdfa11d9f386cfe451acfd55b75e600c9f02d9a5d128dd09548fb89b
 
 build:
   number: 0
